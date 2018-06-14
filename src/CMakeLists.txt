@@ -17,5 +17,5 @@ add_library(PowerTools++ ${SOURCES} ${HEADERS})
 #target_link_libraries(PowerTools++ ${PLPLOT_LIBRARIES} ${GUROBI_LIBRARIES} ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES} ${IPOPT_LIBRARIES})
 
 
-add_executable(PowerTools main.cpp)
-target_link_libraries(PowerTools PowerTools++)
+add_executable(AIGridSim main.cpp)
+target_link_libraries(AIGridSim PowerTools++)
