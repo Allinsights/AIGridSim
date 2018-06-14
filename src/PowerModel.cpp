@@ -14,7 +14,7 @@
 #include <ctime>
 #include <stdlib.h>
 #include <iomanip>
-
+#include <algorithm>
 
 PowerModel::PowerModel():PowerModel(ACPOL, new Net(), ipopt){};
 
