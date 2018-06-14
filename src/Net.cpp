@@ -857,7 +857,7 @@ void Net::precise(ofstream &myfile, float f){
 //    myfile << "######### Automatically generated DAT file #########\n";
 //    myfile << "param ref_bus:= 1;\n";
 //    myfile << "param mva_base:= 100.0;\n";
-//    myfile << "param theta_bound := " << pi/12 << ";\n";
+//    myfile << "param theta_bound := " << M_PI/12 << ";\n";
 //    
 //    myfile << "set buses :=\n";
 //    for (int i=0; i<nodes.size(); i++) {
@@ -2427,20 +2427,20 @@ int Net::readFile(string fname){
         else
             arc->tr = atof(word.c_str());
         file >> word;
-        arc->as = atof(word.c_str())*pi/180;
+        arc->as = atof(word.c_str())*M_PI/180;
         file >> word;
         arc->cc = arc->tr*cos(arc->as);
         arc->dd = arc->tr*sin(arc->as);
         arc->status = atof(word.c_str());
         arc_clone->status = arc->status;
         file >> word;
-//        arc->tbound.min = atof(word.c_str())*pi/180;
-        arc->tbound.min = -45*pi/180.;
+//        arc->tbound.min = atof(word.c_str())*M_PI/180;
+        arc->tbound.min = -45*M_PI/180.;
         arc_clone->tbound.min = arc->tbound.min;
         m_theta_lb += arc->tbound.min;
         file >> word;
-//        arc->tbound.max = atof(word.c_str())*pi/180;
-        arc->tbound.max = 45*pi/180.;
+//        arc->tbound.max = atof(word.c_str())*M_PI/180;
+        arc->tbound.max = 45*M_PI/180.;
         arc_clone->tbound.max = arc->tbound.max;
         m_theta_ub += arc->tbound.max;
         arc->smax = max(pow(arc->src->vbound.max,2)*(arc->g*arc->g+arc->b*arc->b)*(pow(arc->src->vbound.max,2) + pow(arc->dest->vbound.max,2)), pow(arc->dest->vbound.max,2)*(arc->g*arc->g+arc->b*arc->b)*(pow(arc->dest->vbound.max,2) + pow(arc->src->vbound.max,2)));
