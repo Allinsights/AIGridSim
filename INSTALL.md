@@ -1,19 +1,24 @@
 DEPENDENCIES
 -------
 
-Ipopt: https://projects.coin-or.org/Ipopt
+To compile from source you need:
 
 cmake: http://www.cmake.org (Version 3.2 or better)
 
 OPTIONAL
 -------
-gurobi: http://www.gurobi.com
+
+Ipopt: https://projects.coin-or.org/Ipopt
 
 -------
 Just enter
+
+mkdir build
+
+cd build
 
 cmake ..
 
 make
 
-The PowerTool binary will then appear under PowerTools/bin.
+The AIGridSim binary will then appear under AIGridSim/bin/local.
