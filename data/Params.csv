@@ -1,0 +1,2 @@
+Number of Years,PV Cost ($/Watt for PV rooftop installation),Annual Demand Growth in %,Annual Inflation in %,PV Capacity (kW),PV efficiency,Battery Energy (kWh),Battery efficiency,Number of Samples,Uncertainty Percentage,Demand Data Number of Years,Irradiance Data Number of Years
+25,1800,2,2.5,945,0.92,1000,0.92,100,15,2,2
