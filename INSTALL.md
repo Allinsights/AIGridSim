@@ -1,7 +1,9 @@
+Binaries for Linux, Mac and Windows can be found under AIGridSim/bin
+
+To compile from source see below.
+
 DEPENDENCIES
 -------
-
-To compile from source you need:
 
 cmake: http://www.cmake.org (Version 3.2 or better)
 
@@ -11,7 +13,7 @@ OPTIONAL
 Ipopt: https://projects.coin-or.org/Ipopt
 
 -------
-Just enter
+Just enter:
 
 mkdir build
 
