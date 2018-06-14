@@ -57,8 +57,8 @@ public:
     
     std::vector<double> weekday_cost;
     std::vector<double> weekend_cost;
-    double              min_cost_week = MAXFLOAT;/*< Smallest Time of Use rate for weekdays */
-    double              min_cost_weekend = MAXFLOAT;/*< Smallest Time of Use rate for weekdays */
+    double              min_cost_week = numeric_limits<double>::max();/*< Smallest Time of Use rate for weekdays */
+    double              min_cost_weekend = numeric_limits<double>::max();/*< Smallest Time of Use rate for weekdays */
     
 //    var<> max_kVa;//Max demand for the last 13 months
     
